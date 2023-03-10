@@ -28,3 +28,5 @@ my_study-*.tar
 *.beam
 /config/*.secret.exs
 .elixir_ls/
+/priv/plts/*.plt
+/priv/plts/*.plt.hash

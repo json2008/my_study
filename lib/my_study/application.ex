@@ -10,6 +10,7 @@ defmodule MyStudy.Application do
     children = [
       # Starts a worker by calling: MyStudy.Worker.start_link(arg)
       # {MyStudy.Worker, arg}
+      MyStudy.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
