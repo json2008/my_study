@@ -37,6 +37,11 @@ config :my_study, MyStudy.Repo,
 
 config :my_study, :ecto_repos, [MyStudy.Repo]
 
+config :my_study, Oban,
+  repo: MyStudy.Repo,
+  plugins: [Oban.Plugins.Pruner],
+  queues: [default: 10, mailers: 20, events: 50, media: 5]
+
 # creating an index with the `concurrently` option set to true
 
 # Import environment specific config. This must remain at the bottom

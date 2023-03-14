@@ -41,6 +41,7 @@ defmodule MyStudy.MixProject do
       {:ecto_sql, "~> 3.9"},
       {:jet_ext, github: "Byzanteam/jet-ext", branch: "main"},
       {:mimic, ">= 0.0.0", only: :test, runtime: false},
+      {:oban, "~> 2.14"},
       {:phoenix, "~> 1.7"},
       {:plug_cowboy, "~> 2.6"},
       {:postgrex, ">= 0.0.0"}

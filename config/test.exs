@@ -12,8 +12,10 @@ import Config
 
 config :my_study, MyStudy.Repo,
   pool: Ecto.Adapters.SQL.Sandbox,
-  adapter: Ecto.Adapters.Postgres,
+  # adapter: Ecto.Adapters.Postgres,
   # username: your_username,
   # password: your_password,
   database: "my_study_test",
   hostname: "localhost"
+
+config :my_study, Oban, testing: :inline
